@@ -1,0 +1,143 @@
+﻿生成启动时间为 2017/3/16 11:33:02。
+     1>项目“F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU\RFT_GPU.vcxproj”在节点 2 上(Build 个目标)。
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" /I. /FIcuda_runtime.h /c F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Administrator\AppData\Local\Temp\tmp3b585de7767f430d88ae0d3329744e21.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\kernel.cu.obj "F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU\kernel.cu"
+         
+         F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\kernel.cu.obj "F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU\kernel.cu" 
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(877): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(1850): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(2728): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(3651): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(4595): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(5521): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(6421): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(7314): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(8227): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(1632): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(36): warning : variable "id_bx" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(39): warning : variable "threadPerBlock_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(76): warning : variable "BlockPerGid_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(84): warning : variable "Sum_x" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(85): warning : variable "Sum_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(86): warning : variable "offset" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(134): warning : variable "threadPerBlock_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(153): warning : variable "MaxThreadBlockSize" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(194): warning : variable "h_echo_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(197): warning : variable "h_ht_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(200): warning : variable "h_pc_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "b1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "b2" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "e1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "e2" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning : variable "time1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning : variable "time2" was declared but never referenced
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(877): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(1850): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(2728): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(3651): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(4595): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(5521): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(6421): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(7314): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(8227): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(877): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(1850): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(2728): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(3651): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(4595): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(5521): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(6421): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(7314): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(8227): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(917): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(1921): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(2857): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(3802): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(4747): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(5772): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(6719): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(7652): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(8526): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(9492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions_decls.h(10478): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(1632): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(877): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(1850): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(2728): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(3651): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(4595): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(5521): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(6421): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(7314): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(8227): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_functions.h(1632): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(36): warning : variable "id_bx" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(39): warning : variable "threadPerBlock_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(76): warning : variable "BlockPerGid_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(84): warning : variable "Sum_x" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(85): warning : variable "Sum_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(86): warning : variable "offset" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(134): warning : variable "threadPerBlock_y" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(153): warning : variable "MaxThreadBlockSize" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(194): warning : variable "h_echo_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(197): warning : variable "h_ht_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(200): warning : variable "h_pc_fft" was set but never used
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "b1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "b2" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "e1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning : variable "e2" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning : variable "time1" was declared but never referenced
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning : variable "time2" was declared but never referenced
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(877): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(1850): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(2728): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(3651): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(4595): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(5521): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(6421): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(7314): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.0\include\math_functions.h(8227): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         kernel.cu
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(176): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(962): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning C4101: “time1”: 未引用的局部变量
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning C4101: “e2”: 未引用的局部变量
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning C4101: “b2”: 未引用的局部变量
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning C4101: “e1”: 未引用的局部变量
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(902): warning C4101: “time2”: 未引用的局部变量
+     1>F:/study/拷贝/拷贝/整理的程序/RFT/RFT_CPU_GPU/RFT_GPU/kernel.cu(901): warning C4101: “b1”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\RFT_GPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cufft.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\RFT_GPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\RFT_GPU.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         RFT_GPU.vcxproj -> F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\RFT_GPU.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart32_70.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart64_70.dll
+         已复制         2 个文件。
+     1>已完成生成项目“F:\study\拷贝\拷贝\整理的程序\RFT\RFT_CPU_GPU\RFT_GPU\RFT_GPU.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:18.05
