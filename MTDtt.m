@@ -2,7 +2,7 @@ close all
 clear all
 clc
 % f0=1e9;
-fc=100e6;%载频
+fc=0;%载频
 B=2e6;%带宽
 Tao=100e-6;%脉宽
 Fs=2*B;%采样频率
@@ -14,7 +14,7 @@ lamda=C/fc;
 delt_R=C/(2*Fs);%%采样距离单元
 PRF=1000;
 Tr=1/PRF;
-Vr_start=100;%初始速度
+Vr_start=1000;%初始速度
 a=0;
 pusle_num=128;%脉冲数
 PV=PRF*lamda/4;
@@ -55,8 +55,8 @@ for i=1:pusle_num
    pc_result_fft(i,:)=fftshift(fft(pc_result(i,:)));%fftshift
 end
 
-% figure()
-% plot(Hz,abs(echo_fft(1,:)));
+figure()
+plot(Hz,abs(echo_fft(1,:)));
 
 figure()
 surf(real(echo));
@@ -73,7 +73,7 @@ view(0,90)
 MTD=fftshift(fft(pc_result,[],1));
 toc
 figure()
-mesh((abs(MTD)));
+mesh(db(abs(MTD)));
 title('未补偿相参积累')
 xlabel('距离')
 ylabel('多普勒单元')
