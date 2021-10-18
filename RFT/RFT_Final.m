@@ -71,8 +71,8 @@ toc
 aaaa=abs(pc_result)';
 figure(), 
 mesh(abs(pc_result))
-xlabel('快时间')
-ylabel('慢时间')
+xlabel('慢时间/脉冲')
+ylabel('快时间/距离单元')
 view(0,90)
 title('原始回波脉压')
 grid on
