@@ -15,20 +15,20 @@ clc
 %%参数计算
 fc=150e6;%载频
 B=15e6;%带宽%64
-Tao=50e-6;%脉宽%16
+Tao=10e-6;%脉宽%16
 Fs=2*B;%采样频率%1*B
 Ts=1/Fs;
 t=-Tao/2:1/Fs:Tao/2-1/Fs;%脉冲时间
 mu=B/Tao;%条频率
 C=3e8;
-delt_R=C/(2*Fs)%%采样距离单元
+delt_R=C/(2*Fs);%%采样距离单元
 R_start=750*delt_R;%相对初始距离
 R_real=150e3;%真实初始距离
 lamda=C/fc;
 delt_R=C/(2*Fs);%%采样距离单元
 PRF=200;
 Tr=1/PRF;
-Vr_start=200;%初始速度
+Vr_start=-20;%初始速度
 TCI=0.5;%相参积累时间s
 a=0;
 pusle_num=round(TCI*PRF);%脉冲数
@@ -52,27 +52,32 @@ tic
     ht=conj((ht_t));%fliplr
     ht_fft=fft(ht);
 % % 脉压
+win = chebwin(L,200);
 for i=1:pusle_num
    echo(:,i)=2*exp(-1j*2*pi*(mu/2*(t+delt_t(i)).^2)+-1j*2*pi*(fc)*(delt_t(i)));
    echo_fft(:,i)=(fft(echo(:,i)));
-   pc_result(:,i)=ifft((echo_fft(:,i).*ht_fft));
+   pc_result(:,i)=win.*ifft((echo_fft(:,i).*ht_fft));
    pc_result_fft(:,i)=(fft(pc_result(:,i)));
 % %    归一化
 %    pc_result(i,:)=pc_result(i,:)./max(abs(pc_result(i,:)));
 end
 toc
 tic
-MTD_fft=(fft(pc_result,[],1));
+MTD_fft=abs(fft(pc_result,[],2));
 toc
+figure(), 
+ft = linspace(-0.5,0.5,pusle_num);
+imagesc(1:L,ft,db(MTD_fft)')
 % Pc=importdata('d:\Pc.txt');
 % Gv_cpu=importdata('d:\Gv_cpu.txt');
 % figure
 % mesh(abs(Pc))
 aaaa=abs(pc_result)';
 figure(), 
-mesh(abs(pc_result))
-xlabel('慢时间/脉冲')
-ylabel('快时间/距离单元')
+% mesh(abs(pc_result))
+imagesc(db(aaaa))
+ylabel('慢时间/脉冲')
+xlabel('快时间/距离单元')
 view(0,90)
 title('原始回波脉压')
 grid on
@@ -82,7 +87,7 @@ grid on
 
 delta_V=lamda/(2*M*Tr);
 vb=lamda/(2*Tr);%第一盲速
-P=3;%round(1024*4/pusle_num);%%最大盲速因子
+P=1;%round(1024*4/pusle_num);%%最大盲速因子
 V=-3*vb:delta_V:3*vb-delta_V;%%速度搜索
 num_sou=length(V);
 Gv=zeros(num_sou,L);
@@ -94,7 +99,7 @@ for vi=1:num_sou%速度i=L/5:L/2    i=1:L
     V(vi);
     for i=1:L%初始距离单元
     indexM=round((0:M-1)*Tr*(-V(vi))/delt_R)+i;
-    find0=find(indexM<1|indexM>1500);
+    find0=find(indexM<1|indexM>L);
     boola(vi,i)=isempty(find0);    
 %     pc_result(index_All);
     if boola(vi,i)
@@ -131,6 +136,9 @@ toc
 % title('未补偿相参积累')
 % xlabel('距离')
 % ylabel('多普勒单元')
+figure()
+imagesc(abs(Gv))
+
 figure()
 [X,Y]=meshgrid(Range,V);
 mesh(Y,X,abs(Gv))
